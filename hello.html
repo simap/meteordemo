@@ -1,0 +1,17 @@
+<head>
+  <title>hello</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+
+  {{#each counters}}
+    <p>You've pressed the {{_id}} button {{counter}} times.  <button class="increment">Click Me</button>
+    </p>
+  {{/each}}
+</template>
